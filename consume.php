@@ -16,6 +16,7 @@ use com\realexpayments\hpp\sdk\RealexException;
 $responseJson = $_GET['hppResponse'];
 
 $realexHpp = new RealexHpp("secret");
+header('Content-Type: application/json');
 
 try {
 

@@ -26,5 +26,5 @@ $hppRequest->addSupplementaryData( $supplementaryData );
 
 $realexHpp = new RealexHpp( $realex_secret );
 $requestJson = $realexHpp->requestToJson( $hppRequest );
-
+header('Content-Type: application/json');
 echo $requestJson;
