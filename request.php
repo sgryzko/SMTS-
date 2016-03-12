@@ -5,12 +5,12 @@ require_once ( 'vendor/autoload.php' );
 use com\realexpayments\hpp\sdk\domain\HppRequest;
 use com\realexpayments\hpp\sdk\RealexHpp;
 
-$merchant_id =  $_GET['merchant_id'];
+$merchant_id = 'hackathon7'; // $_GET['merchant_id'];
 $account =  $_GET['account'];
 $amount =  $_GET['amount'];
 $currency = 'EUR';
 $auto_settle_flag = '1';
-$realex_secret = 'my secret';
+$realex_secret = 'secret';
 
 
 $hppRequest = ( new HppRequest() )
